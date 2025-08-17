@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Processed Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Preprocessing Completed!</h1>
+        <p><a href="{{ url_for('download_file', filename=train_file) }}">Download Train Dataset</a></p>
+        <p><a href="{{ url_for('download_file', filename=test_file) }}">Download Test Dataset</a></p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>

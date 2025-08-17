@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Preprocessing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Dataset for Preprocessing</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="dataset" required>
+            <button type="submit">Upload & Process</button>
+        </form>
+    </div>
+</body>
+</html>
